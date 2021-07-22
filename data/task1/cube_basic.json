@@ -1,0 +1,45 @@
+{
+	"width": 800,
+	"height": 600,
+
+	"scene":
+	{
+		"camera":
+		{
+			"w_s": 0.036,
+			"f": 0.020138391,
+			"eye": [2, 3, 4],
+			"lookat": [0, 0, 0],
+			"up": [0, 1, 0]
+		},
+		"lights":
+		[
+			{ "p": [1000, 800, -300], "color": [1.0, 1.0, 1.0] },
+            { "p": [-1000, 800, 300], "color": [0.2, 0.2, 0.2] }
+		],
+		"materials": [
+
+      {
+        "name": "floor",
+        "diffuse": [ 0.66, 0.66, 0.66 ],
+        "specular": [ 0.34, 0.34, 0.34 ],
+        "mirror": false
+      },
+      {
+        "name": "base",
+        "diffuse": [ 0.1, 1.0, 0.1 ],
+        "specular": [ 0.34, 0.34, 0.34 ],
+        "mirror": false
+      }
+		],
+    "objects": [
+      {
+        "type": "cube",
+        "position": [ 0.0, 0.0, 0.0 ],
+        "rotation": [ 0.0, 0.0, 0.0 ],
+        "scale": [ 1.0, 1.0, 1.0 ],
+        "material": "base"
+      }
+    ]
+	}
+}

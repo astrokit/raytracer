@@ -1,0 +1,84 @@
+{
+	"width": 800,
+	"height": 600,
+
+	"scene":
+	{
+		"camera":
+		{
+			"w_s": 0.036,
+			"f": 0.020138391,
+			"eye": [-4, 4, -4],
+			"lookat": [0, 0, 0],
+			"up": [0, 1, 0]
+		},
+		"lights":
+		[
+			{ "p": [1000, 800, -300], "color": [1.0, 1.0, 1.0] },
+      { "p": [-1000, 800, 300], "color": [0.2, 0.2, 0.2] }
+		],
+    "materials": [
+
+      {
+        "name": "floor",
+        "diffuse": [ 0.66, 0.66, 0.66 ],
+        "specular": [ 0.34, 0.34, 0.34 ],
+        "mirror": false
+      },
+      {
+        "name": "base",
+        "diffuse": [ 0.1, 1.0, 0.1 ],
+        "specular": [ 0.34, 0.34, 0.34 ],
+        "mirror": false
+      },
+      {
+        "name": "blue",
+        "diffuse": [ 0.1, 0.5, 1.0 ],
+        "specular": [ 0.34, 0.34, 0.34 ],
+        "mirror": false
+      },
+      {
+        "name": "yellow",
+        "diffuse": [ 1.0, 0.8, 0.2 ],
+        "specular": [ 0.34, 0.34, 0.34 ],
+        "mirror": false
+      },
+
+      {
+        "name": "red",
+        "diffuse": [ 1.0, 0.1, 0.1 ],
+        "specular": [ 0.34, 0.34, 0.34 ],
+        "mirror": false
+      }
+    ],
+    "objects": [
+      {
+        "type": "plane",
+        "p": [ 0.0, 1.0, 0.0, 0.0 ],
+        "material": "floor"
+      },
+
+      {
+        "type": "cube",
+        "position": [ 0.0, 1.0, 0.25 ],
+        "rotation": [ 0.0, 0.0, 0.0 ],
+        "scale": [ 1.0, 1.0, 1.0 ],
+        "material": "yellow"
+      },
+      {
+        "type": "cube",
+        "position": [ 0.0, 1.0, 0.25 ],
+        "rotation": [ 0.0, 0.0, 0.0 ],
+        "scale": [ 0.5, 3.5, 0.5 ],
+        "material": "red"
+      },
+      {
+        "type": "cube",
+        "position": [ 0.0, 1.0, 0.0 ],
+        "rotation": [ 0.0, 0.0, 0.0 ],
+        "scale": [ 0.5, 0.5, 3.5 ],
+        "material": "blue"
+      }
+    ]
+	}
+}
